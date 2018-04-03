@@ -1,6 +1,25 @@
 .chanpin_bottom{
 	width: 1200px;
-	margin:0 auto; 
+	margin:0 auto;
+	height: 900px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	transition: all 0.3s
+
+}
+.chanpin_bottom.active{
+	z-index:23;
+	display: block;
+	opacity: 1;
+}
+.botton{
+	width: 1200px;
+	margin:0 auto;
+	height: 900px;
+	position: relative;
+	transition: all 0.3s
 }
 .chanpin_bottom li{
 	width: 260px;
@@ -81,6 +100,14 @@
 	font-size: 14px;
 	line-height: 24px;
 	padding-bottom: 76px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: -60px;
+}
+.chanpin_lunbo .active{
+	background-color: #ff0036;
 }
 .chanpin_lunbo img{
 	float: left;

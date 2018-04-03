@@ -5,10 +5,15 @@
 }
 .bannerbanner img{
 	height: 540px;
-	width: 100%;
+	width: 1190px;
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
+	margin: auto;
+}
+.bannerbanner .active{
+	z-index: 33;
 }
 .lunbo{
 	width: 1200px;
@@ -27,6 +32,7 @@
 	color: #2D2D2D;
 	text-align: center;
 	line-height: 32px;
+	z-index: 999;
 }
 .lunbodian1{
 	bottom: 137px;
@@ -167,10 +173,18 @@
 	margin-bottom: 30px;
 }
 .case_bottom{
-	position: relative;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+}
+.case_bottom .active{
+background-color: #2B6C8C;
 }
 .case{
 	height: 525px;
+	position: relative;
 }
 .case_bottom_case3{
 	position: absolute;
@@ -228,20 +242,26 @@
 	position: relative;
 	color: #7E7E7E;
 }
-.black{
+.prev,.next{
 	width: 42px;
 	height: 42px;
 	background-color: #000;
 	position: absolute;
 	top: 278px;
 	left: 451px;
+	
 }
-.black img{
+.innwe{
+	width: 6000px;
+	transition: all 0.3s;
+}
+.prev img,.next img{
 	margin:12px 15px; 
 }
+
 .blue{
 	left: 493px;
-	background-color: #2B6C8C;
+
 }
 .team{
 	width: 100%;

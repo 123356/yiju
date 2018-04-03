@@ -67,10 +67,10 @@
 	<!-- banner开始 -->
 	<div class="bannerbanner">
 		<img src="img/banner1.png">
-		<img src="img/banner1.png">
-		<img src="img/banner1.png">
-		<img src="img/banner1.png">
-		<img src="img/banner1.png">
+		<img src="img/b1.jpg">
+		<img src="img/b2.jpg">
+		<img src="img/b3.jpg">
+		<img src="img/b4.jpg">
 		<div class="lunbo">
 			<div class="lunbodian">
 				1
@@ -221,6 +221,7 @@
 			<span>SOMETHING<br>YOU<br>
 			<h1>DON'T KNOW</h1></span>
 		</div>
+		<div class="innwe">
 		<div class="case_bottom">
 			<img src="img/case3.png" class="case_bottom_case3">
 			<img src="img/case2.png" class="case_bottom_case2">
@@ -234,13 +235,54 @@
 					<div class="more_blue">+</div>
 				</div>
 			</div>
-			<div class="black">
+			<div class="prev active">
 				<img src="img/jiantou.png">
 			</div>
-			<div class="black blue">
+			<div class="next blue">
 				<img src="img/jiantou1.png">
 			</div>
 		</div>
+		<div class="case_bottom">
+			<img src="img/case3.png" class="case_bottom_case3">
+			<img src="img/case2.png" class="case_bottom_case2">
+			<img src="img/case1.png" class="case_bottom_case1">
+			<h1>LIVABLE ERA <i>阳台展示</i></h1>
+			<p>宜居时代有限公司成立于1984年，1988年进入家居行业，经过30余年的发展“</p>
+			<div class="xiangqing">
+				宜居时代创造性的引进和提出了先进的服务理念。率先提出“先行赔付绿色环保”、“零延迟”、“一个月无理由退换货”、“没有增项的家装”等服务承诺，从消费者的切身利益出发，踏实认真履行“先行赔付”十数载。“让客户满意”，“向消费者倾斜”是永远不懈的追求。<br>2017年，深圳地铁集团成为公司基石股东，表示将支持公司混合所有制结构和事业合伙人机制，支持公司城市配套服务商战略，支持公司稳定健康发展。未来公司和深圳地铁集团将充分发挥各自优势，共同推进实施“轨道+物业”发展战略，全面提升城市配套服务能力，助推城市经济发展。
+				<div class="more">
+					<span>MORE</span>
+					<div class="more_blue">+</div>
+				</div>
+			</div>
+			<div class="prev active">
+				<img src="img/jiantou.png">
+			</div>
+			<div class="next blue">
+				<img src="img/jiantou1.png">
+			</div>
+		</div>
+		<div class="case_bottom">
+			<img src="img/case3.png" class="case_bottom_case3">
+			<img src="img/case2.png" class="case_bottom_case2">
+			<img src="img/case1.png" class="case_bottom_case1">
+			<h1>LIVABLE ERA <i>阳台展示</i></h1>
+			<p>宜居时代有限公司成立于1984年，1988年进入家居行业，经过30余年的发展“</p>
+			<div class="xiangqing">
+				宜居时代创造性的引进和提出了先进的服务理念。率先提出“先行赔付绿色环保”、“零延迟”、“一个月无理由退换货”、“没有增项的家装”等服务承诺，从消费者的切身利益出发，踏实认真履行“先行赔付”十数载。“让客户满意”，“向消费者倾斜”是永远不懈的追求。<br>2017年，深圳地铁集团成为公司基石股东，表示将支持公司混合所有制结构和事业合伙人机制，支持公司城市配套服务商战略，支持公司稳定健康发展。未来公司和深圳地铁集团将充分发挥各自优势，共同推进实施“轨道+物业”发展战略，全面提升城市配套服务能力，助推城市经济发展。
+				<div class="more">
+					<span>MORE</span>
+					<div class="more_blue">+</div>
+				</div>
+			</div>
+			<div class="prev active">
+				<img src="img/jiantou.png">
+			</div>
+			<div class="next blue">
+				<img src="img/jiantou1.png">
+			</div>
+		</div>
+	</div>
 	</div>
 
 	<!-- 团队介绍 -->
@@ -350,5 +392,39 @@
 		<p>京ICP备11017824号-4 京ICP证130164号 北京市公安局朝阳分局备案编号：11010502000501</p>
 		<p>网络文化经营许可证 京网文[2013]6173-844号 广播电视节目制作经营许可证 （京）字第06990号</p>
 	</div>
+	<script src="js/index.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+	let t=setInterval(move(),1000);
+	function move(){
+		$(".lunbodian").each(function(index){
+		$(this).mouseenter(function () {
+			$(".bannerbanner img").removeClass("active").eq(index).addClass("active")
+			
+	});
+		
+		});
+	}
+	move();
+	$(".bannerbanner").mouseenter(function(){
+		clearInterval(t);
+	});
+	$(".bannerbanner").mouseleave(function(){
+		let t=setInterval(move(),1000);
+	});
+	//
+	
+
+
+    // $(".container").hover(function () {
+    //     $("#prev,#next").fadeIn(200)
+    // },function () {
+    //     $("#prev,#next").fadeOut(200)
+    // })
+   
+   
+  
+
+	</script>
 </body>
 </html>
